@@ -9,15 +9,24 @@ public abstract class Movie implements StoreMediaOperations {
 
     public Movie(String rating, String title) {
         this.id = UUID.randomUUID();
-        // homework
+        this.rating = rating;
+        this.title = title;
     }
 
     public Movie(Movie anotherMovie) {
-        // homework
+        id = anotherMovie.id;
+        rating = anotherMovie.rating;
+        title = anotherMovie.title;
     }
 
     @Override
     public boolean equals(Object obj) {
-        // homework
+        Movie movie = (Movie)obj;
+        if(this.id.equals(movie.id) && this.title.equals(movie.title) && this.rating .equals(movie.rating))
+        {
+            return true;
+        }
+
+        return false;
     }
 }
