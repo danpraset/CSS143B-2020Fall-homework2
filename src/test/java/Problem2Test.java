@@ -8,12 +8,14 @@ public class Problem2Test {
         int[][] inputs = {
                 // DO NOT REMOVE OR CHANGE THE GIVEN TEST CASES!
                 {0, 0, 1, 1, 1, 2, 2, 4, 4, 6},
-                {0, 0, 0, 1, 1, 2, 2, 3, 4, 5, 5}
+                {0, 0, 0, 1, 1, 2, 2, 3, 4, 5, 5},
+                {0, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 6}
         };
 
         int[][] expects = {
                 {0, 1, 2, 4, 6},
-                {0, 1, 2, 3, 4, 5}
+                {0, 1, 2, 3, 4, 5},
+                {0, 2, 3, 4, 5, 6}
         };
 
         assertEquals(expects.length, inputs.length);
